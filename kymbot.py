@@ -107,7 +107,7 @@ def inlinequery(bot, update):
             if len(restabl.contents) >= 9:
                 logger.debug('entry 4')
                 entry4 = restabl.contents[1].contents[7]
-                entry4url = 'http://knowyourmeme.com' + entry3.a['href']
+                entry4url = 'http://knowyourmeme.com' + entry4.a['href']
                 results.append(InlineQueryResultArticle(id=uuid4(),
                                                 title=entry4.img['title'],
                                                 thumb_url=entry4.img['data-src'],
